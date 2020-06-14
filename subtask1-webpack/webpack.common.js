@@ -6,14 +6,10 @@ module.exports = {
     entry: {
         app: './src/index.js',
     },
-    devServer: {
-        contentBase: './dist',
-        hot: true,
-    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'Output Management',
+            title: 'Dev and Prod',
         }),
     ],
     output: {
